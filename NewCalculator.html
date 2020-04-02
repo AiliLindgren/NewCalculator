@@ -8,15 +8,21 @@
 </head>
 
 <body>
-    <input type="text" id="num1" /> + <input type="text" id="num2" />
-    <button onclick="sum()">=</button>
-    <span id="resultAdd"></span>
+    <div>
+        <input type="text" id="num1" />
+         + 
+        <input type="text" id="num2" />
+        <button onclick="calculate('+', 'num1', 'num2', 'resultAdd')">=</button>
+        <span id="resultAdd"></span>
+    </div>
 
-    <br/>
-
-    <input type="text" id="num3" /> - <input type="text" id="num4" />
-    <button onclick="subtract()">=</button>
-    <span id="resultSub"></span>
+    <div>
+        <input type="text" id="num3" />
+         - 
+        <input type="text" id="num4" />
+        <button onclick="calculate('-', 'num3', 'num4', 'resultSub')">=</button>
+        <span id="resultSub"></span>
+    </div>
 
     <script src="NewCalculator.js"></script>
 </body>
