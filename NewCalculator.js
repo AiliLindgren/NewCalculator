@@ -42,7 +42,29 @@ function sum() {
     let num1 = parseFloat(enteredNum1)
     let num2 = parseFloat(enteredNum2)
 
-    let result = round(num1 + num2)
+    let resultAdd = round(num1 + num2)
 
-    document.getElementById("result").innerText = result
+    document.getElementById("resultAdd").innerText = resultAdd
+}
+
+function subtract() {
+    let enteredNum3 = document.getElementById("num3").value
+    let enteredNum4 = document.getElementById("num4").value
+
+    if (!isNumber(enteredNum3)) {
+        alert("Första siffran är inte ett nummer")
+        return
+    }
+
+    if (!isNumber(enteredNum4)) {
+        alert("Andra siffran är inte ett nummer")
+        return
+    }
+
+    let num3 = parseFloat(enteredNum3)
+    let num4 = parseFloat(enteredNum4)
+
+    let resultSub = round(num3 - num4)
+
+    document.getElementById("resultSub").innerText = resultSub
 }
